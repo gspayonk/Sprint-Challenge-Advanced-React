@@ -4,6 +4,7 @@ import App from './App';
 
 //importing testing library
 import { render } from "@testing-library/react";
+import DarkModeNav from './components/DarkModeNav';
 
 
 it('renders without crashing', () => {
@@ -17,7 +18,7 @@ it('has header', () => {
   doc.queryByText(/players/i)
 })
 
-// it('has dark-mode', () => {
-//   const doc = render(<App />);
-//   doc.queryByText(/players/i)
-// })
+it('has dark-mode', () => {
+  render(<DarkModeNav />);
+  
+})
